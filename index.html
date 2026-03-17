@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Taniti | The Pacific's Hidden Gem</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <style>
+      /* Custom Styles to supplement Bootstrap */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 76px; /* Space for fixed navbar */
+        background-color: #f8f9fa;
+      }
+
+      /* SPA Section Toggling */
+      .page-section {
+        display: none;
+        animation: fadeIn 0.4s ease-in;
+      }
+      .page-section.active-section {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Placeholder Images */
+      .placeholder-img {
+        background-color: #dee2e6;
+        color: #6c757d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 8px;
+      }
+      .hero-placeholder {
+        height: 400px;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+        color: #2b5876;
+      }
+      .card-img-placeholder {
+        height: 200px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      /* Navbar enhancements */
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #0d6efd !important;
+      }
+      .nav-link {
+        font-weight: 500;
+        cursor: pointer;
+        transition:
+          color 0.2s,
+          background-color 0.2s;
+        border-radius: 4px;
+        margin: 0 2px;
+      }
+      .nav-link.active {
+        background-color: #0d6efd;
+        color: white !important;
+      }
+
+      /* General Spacing and Cards */
+      .content-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+      .footer {
+        background-color: #212529;
+        color: #adb5bd;
+        padding: 3rem 0;
+        margin-top: 4rem;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#" data-target="home">Taniti</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" data-target="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="food">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="amenities">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="transportation"
+                >Transportation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="lodging">Lodging & Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="entertainment">Entertainment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="faqs">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="container mb-5">
+      <!-- ==================== HOME PAGE ==================== -->
+      <section id="home" class="page-section active-section">
+        <div class="placeholder-img hero-placeholder">
+          <img src="honls-beach-0335-header.jpg" />
+        </div>
+
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold text-primary mb-3">Welcome to Taniti</h1>
+          <p class="lead text-muted w-75 mx-auto">
+            Discover a tropical paradise in the Pacific. With breathtaking
+            beaches, lush rainforests, and a rich local culture, Taniti is the
+            perfect getaway for relaxation and adventure.
+          </p>
+          <div class="mt-4">
+            <button
+              class="btn btn-primary btn-lg me-2 nav-btn"
+              data-target="entertainment"
+            >
+              Plan Your Adventure
+            </button>
+            <button
+              class="btn btn-outline-primary btn-lg nav-btn"
+              data-target="lodging"
+            >
+              Book a Stay
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="volcano.webp" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Varied Terrain</h5>
+                <p class="card-text">
+                  Though less than 500 square miles, our island features sandy
+                  and rocky beaches, a safe harbor, lush tropical rainforests,
+                  and a mountainous interior complete with an active volcano.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="culture.jpg" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Rich Culture</h5>
+                <p class="card-text">
+                  Home to an indigenous population of about 20,000, Taniti
+                  offers a warm, welcoming environment. Explore native
+                  architecture and a history rooted in fishing and agriculture.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="tropical-bay.jpg" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Yellow Leaf Bay</h5>
+                <p class="card-text">
+                  The bustling heart of our coastal life. Enjoy white, sandy
+                  beaches, modern amenities, and the rapidly developing Merriton
+                  Landing area on the north side of the bay.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FOOD PAGE ==================== -->
+      <section id="food" class="page-section">
+        <h1 class="fw-bold mb-4">Dining on Taniti</h1>
+        <div
+          class="placeholder-img hero-placeholder mb-4"
+          style="height: 250px"
+        >
+          <img src="seafood.jpg" />
+        </div>
+
+        <div class="content-card">
+          <h3>Restaurants</h3>
+          <p class="lead">
+            Taniti currently boasts 10 unique dining establishments to satisfy
+            your cravings, from local island flavors to international favorites.
+          </p>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge bg-primary rounded-pill me-3">5</span>
+              <p>
+                <strong>Local Seafood & Rice: </strong> Enjoy freshly caught
+                local fish prepared with traditional island recipes.
+              </p>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge bg-primary rounded-pill me-3">3</span>
+              <p>
+                <strong>American-Style:</strong> Comfort food and familiar meals
+                for when you want a taste of home.
+              </p>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge bg-primary rounded-pill me-3">2</span>
+              <p>
+                <strong>Pan-Asian Cuisine:</strong> Exquisite flavors combining
+                the best of Asian culinary traditions.
+              </p>
+            </li>
+          </ul>
+          <button class="btn btn-primary">Make a Reservation</button>
+        </div>
+      </section>
+
+      <!-- ==================== AMENITIES PAGE ==================== -->
+      <section id="amenities" class="page-section">
+        <h1 class="fw-bold mb-4">Island Amenities</h1>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="content-card h-100">
+              <h3 class="text-primary mb-3">Groceries & Daily Needs</h3>
+              <p>
+                Whether you're cooking at your rental or need a midnight snack,
+                Taniti has you covered.
+              </p>
+              <ul>
+                <li>
+                  <strong>Supermarkets:</strong> 2 large stores for all major
+                  grocery needs.
+                </li>
+                <li>
+                  <strong>Local Grocers:</strong> 2 smaller grocery stores with
+                  fresh daily provisions.
+                </li>
+                <li>
+                  <strong>Convenience:</strong> 1 convenience store open 24
+                  hours a day, 7 days a week.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-card h-100">
+              <h3 class="text-primary mb-3">Healthcare Services</h3>
+              <p>Your safety and health are important to us.</p>
+              <ul>
+                <li>
+                  <strong>Hospital:</strong> One central hospital equipped with
+                  modern facilities. The hospital employs many multilingual
+                  staff members to assist tourists.
+                </li>
+                <li>
+                  <strong>Clinics:</strong> Several clinics located across the
+                  island for minor issues and check-ups.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="content-card">
+              <h3 class="text-primary mb-3">Banking & Currency</h3>
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p>
+                    Taniti's official currency is the
+                    <strong>U.S. Dollar (USD)</strong>.
+                  </p>
+                  <ul>
+                    <li>Many businesses also accept Euros and Yen.</li>
+                    <li>
+                      Major credit cards are widely accepted across the island.
+                    </li>
+                    <li>
+                      Several local banks are available to facilitate currency
+                      exchange.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="placeholder-img" style="height: 120px">
+                    <img src="currency.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TRANSPORTATION PAGE ==================== -->
+      <section id="transportation" class="page-section">
+        <h1 class="fw-bold mb-4">Transportation</h1>
+
+        <div class="content-card mb-4">
+          <h3 class="mb-3">Getting to Taniti</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>By Air</h5>
+              <p>
+                Almost all visitors arrive by air. Our small, modern airport
+                accommodates small jets and propeller planes. We are currently
+                expanding the airport to allow larger jets to land within the
+                next few years!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h5>By Sea</h5>
+              <p>
+                A small cruise ship docks in beautiful Yellow Leaf Bay for one
+                night per week, offering a scenic maritime arrival.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3 class="mb-3">Getting Around the Island</h3>
+          <p>
+            Taniti City is fairly flat and very walkable, especially around the
+            Merriton Landing area where many tourists stay. For exploring
+            further, you have several options:
+          </p>
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6 col-md-3 text-center">
+              <h6 class="fw-bold">Buses</h6>
+              <p class="small text-muted">
+                Public buses serve Taniti City (5am - 11pm daily). Private buses
+                serve the rest of the island.
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <h6 class="fw-bold">Taxis</h6>
+              <p class="small text-muted">
+                Readily available throughout Taniti City for quick and direct
+                transportation.
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <h6 class="fw-bold">Rental Cars</h6>
+              <p class="small text-muted">
+                Available to rent from a local rental agency conveniently
+                located near the airport.
+              </p>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+              <h6 class="fw-bold">Bicycles</h6>
+              <p class="small text-muted">
+                Available from several vendors. Note: Helmets are required by
+                law.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== LODGING PAGE ==================== -->
+      <section id="lodging" class="page-section">
+        <h1 class="fw-bold mb-4">Lodging & Hotels</h1>
+        <div class="alert alert-info" role="alert">
+          <strong>Peace of mind:</strong> All types of lodging on Taniti are
+          strictly regulated and regularly inspected by the Tanitian government
+          to ensure quality and safety.
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="resort.jpg" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Four-Star Resort</h4>
+                <p class="card-text">
+                  Experience ultimate luxury at our premier large resort. Enjoy
+                  world-class amenities, stunning ocean views, and premium
+                  services.
+                </p>
+                <button class="btn btn-outline-primary btn-sm">
+                  Check Availability
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="hotel.jpg" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Family-Owned Hotels</h4>
+                <p class="card-text">
+                  Immerse yourself in local culture by staying in one of our
+                  many cozy, family-owned hotels scattered around the island.
+                </p>
+                <button class="btn btn-outline-primary btn-sm">
+                  View Listings
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="b&b.jpg" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Bed and Breakfasts</h4>
+                <p class="card-text">
+                  Enjoy a quiet, intimate stay at a growing number of charming
+                  B&Bs, perfect for romantic getaways.
+                </p>
+                <button class="btn btn-outline-primary btn-sm">
+                  View Listings
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="placeholder-img card-img-placeholder">
+                <img src="hostel.jpg" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Budget Hostels</h4>
+                <p class="card-text">
+                  Traveling on a budget? Our inexpensive hostel provides clean,
+                  safe, and friendly accommodations for backpackers and solo
+                  travelers.
+                </p>
+                <button class="btn btn-outline-primary btn-sm">
+                  View Listings
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ENTERTAINMENT PAGE ==================== -->
+      <section id="entertainment" class="page-section">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h1 class="fw-bold">Entertainment & Activities</h1>
+          <span class="badge bg-success p-2"
+            >New: 9-hole Golf Course opening next year!</span
+          >
+        </div>
+
+        <div class="content-card">
+          <h3 class="text-primary mb-3">Nature & Sightseeing</h3>
+          <p>
+            Most tourists spend their time in Taniti City, taking in the native
+            architecture and the beautiful white sandy beaches that encircle
+            Yellow Leaf Bay. For the adventurers:
+          </p>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>✔️ Rainforest hikes & Zip-lining</li>
+                <li>✔️ Active Volcano visits</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>✔️ Chartered fishing tours</li>
+                <li>✔️ Snorkeling in the reef</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li>✔️ Boat & Bus island tours</li>
+                <li>✔️ Scenic Helicopter rides</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 class="text-primary mt-4 mb-3">City Life (Merriton Landing)</h3>
+          <p>
+            The rapidly developing area of Merriton Landing on the north side of
+            Yellow Leaf Bay is the hub for indoor and evening entertainment.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li>Local History Museum</li>
+                <li>Art Galleries</li>
+                <li>Movie Theater & Arcade</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li>Several Pubs & a Microbrewery</li>
+                <li>New Dance Club</li>
+                <li>Bowling Alley</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="placeholder-img" style="height: 300px">
+              [ Collage of Taniti Activities: Snorkeling, Dancing, Hiking ]
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FAQS PAGE ==================== -->
+      <section id="faqs" class="page-section">
+        <h1 class="fw-bold mb-4">Frequently Asked Questions</h1>
+        <p class="lead mb-4">
+          Find answers to the most common questions from our visitors to help
+          you plan your perfect trip.
+        </p>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What kind of power outlets are used on Taniti?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Power outlets are <strong>120 volts</strong>, which is the exact
+                same standard used in the United States. US travelers will not
+                need a voltage converter.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What are the laws regarding alcohol?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                The drinking age on Taniti is <strong>18</strong> (though it is
+                not strictly enforced). Please note that by law, alcohol is not
+                allowed to be served or sold between the hours of midnight and
+                9:00 a.m.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Is English widely spoken?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, many younger Tanitians speak fluent English. However, very
+                little English is spoken in the rural areas, especially by the
+                older residents.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Is Taniti safe for tourists?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, violent crime is very rare on Taniti. However, as tourism
+                has increased, there have been more reports of pickpocketing and
+                other petty crimes. We advise visitors to keep their valuables
+                secure, especially in crowded tourist areas.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Will businesses be open on holidays?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Taniti enjoys a large number of national holidays. Visitors
+                should plan accordingly, as many tourist attractions and
+                restaurants will be closed on these days. Check local calendars
+                before planning specific excursions!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT PAGE ==================== -->
+      <section id="contact" class="page-section">
+        <h1 class="fw-bold mb-4">Contact Us</h1>
+
+        <div class="row g-5">
+          <div class="col-md-6">
+            <div class="content-card h-100">
+              <h3 class="mb-4">Ask a Question</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Jane Doe"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="jane@example.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="How can we help you plan your trip?"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-card h-100 bg-primary text-white">
+              <h3 class="mb-4">Get in Touch</h3>
+              <p class="mb-4">
+                The Taniti Tourism Board is here to ensure you have a wonderful
+                and welcoming experience on our island. Reach out to us for
+                brochures, group rates, or specific inquiries.
+              </p>
+
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <strong>Address:</strong><br />
+                  111 Tropical Blvd<br />
+                  Taniti City, Taniti 99999
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <div>
+                  <strong>Phone:</strong><br />
+                  +1 (111) 111-1111
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div>
+                  <strong>Email:</strong><br />
+                  hello@visittaniti.gov
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <h4 class="text-white mb-3">Taniti Tourism Board</h4>
+        <p class="mb-0">© 2026 Government of Taniti. All rights reserved.</p>
+        <div class="mt-3">
+          <a href="#" class="text-muted text-decoration-none me-3"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-muted text-decoration-none me-3"
+            >Terms of Service</a
+          >
+          <a href="#" class="text-muted text-decoration-none"
+            >Travel Advisories</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Single Page Application Logic -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all navigation links and content sections
+        const navLinks = document.querySelectorAll(
+          ".nav-link, .nav-btn, .navbar-brand",
+        );
+        const sections = document.querySelectorAll(".page-section");
+        const navbarCollapse = document.getElementById("navbarNav");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute("data-target");
+            if (!targetId) return;
+
+            // 1. Update active state on Navigation Links
+            document
+              .querySelectorAll(".nav-link")
+              .forEach((n) => n.classList.remove("active"));
+
+            // Only add 'active' if it's an actual navbar link (not the brand or a button)
+            if (link.classList.contains("nav-link")) {
+              link.classList.add("active");
+            } else {
+              // If they clicked a button or brand, find the corresponding nav link to highlight
+              const correspondingNavLink = document.querySelector(
+                `.nav-link[data-target="${targetId}"]`,
+              );
+              if (correspondingNavLink)
+                correspondingNavLink.classList.add("active");
+            }
+
+            // 2. Hide all sections, show target section
+            sections.forEach((sec) => {
+              sec.classList.remove("active-section");
+            });
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+              targetSection.classList.add("active-section");
+            }
+
+            // 3. Close mobile menu if it's open
+            if (navbarCollapse.classList.contains("show")) {
+              let bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+              if (bsCollapse) bsCollapse.hide();
+            }
+
+            // 4. Scroll to top
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
