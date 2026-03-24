@@ -67,6 +67,9 @@
       <section id="home" class="page-section active-section">
         <div class="image-container hero-image-container">
           <img src="honls-beach-0335-header.jpg" />
+          <div class="image-reference-label" style="border-color: black">
+            <span style="color: black">1</span>
+          </div>
         </div>
 
         <div class="text-center mb-5">
@@ -97,6 +100,9 @@
             <div class="card h-100 border-0 shadow-sm">
               <div class="image-container card-image-container">
                 <img src="volcano.webp" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">2</span>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Varied Terrain</h5>
@@ -112,6 +118,9 @@
             <div class="card h-100 border-0 shadow-sm">
               <div class="image-container card-image-container">
                 <img src="culture.jpg" />
+                <div class="image-reference-label" style="border-color: white">
+                  <span style="color: white">3</span>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Rich Culture</h5>
@@ -127,6 +136,9 @@
             <div class="card h-100 border-0 shadow-sm">
               <div class="image-container card-image-container">
                 <img src="tropical-bay.jpg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">4</span>
+                </div>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Yellow Leaf Bay</h5>
@@ -148,6 +160,9 @@
           style="height: 250px"
         >
           <img src="seafood.jpg" />
+          <div class="image-reference-label" style="border-color: white">
+            <span style="color: white">5</span>
+          </div>
         </div>
 
         <div class="content-card">
@@ -249,6 +264,12 @@
                 <div class="col-md-4 text-center">
                   <div class="image-container" style="height: 120px">
                     <img src="currency.svg" />
+                    <div
+                      class="image-reference-label"
+                      style="border-color: black"
+                    >
+                      <span style="color: black">6</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -335,6 +356,9 @@
             <div class="card h-100 shadow-sm border-0">
               <div class="image-container card-image-container">
                 <img src="resort.jpg" />
+                <div class="image-reference-label" style="border-color: white">
+                  <span style="color: white">7</span>
+                </div>
               </div>
               <div class="card-body">
                 <h4 class="card-title">Four-Star Resort</h4>
@@ -353,6 +377,9 @@
             <div class="card h-100 shadow-sm border-0">
               <div class="image-container card-image-container">
                 <img src="hotel.jpg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">8</span>
+                </div>
               </div>
               <div class="card-body">
                 <h4 class="card-title">Family-Owned Hotels</h4>
@@ -370,6 +397,9 @@
             <div class="card h-100 shadow-sm border-0">
               <div class="image-container card-image-container">
                 <img src="b&b.jpg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">9</span>
+                </div>
               </div>
               <div class="card-body">
                 <h4 class="card-title">Bed and Breakfasts</h4>
@@ -387,6 +417,9 @@
             <div class="card h-100 shadow-sm border-0">
               <div class="image-container card-image-container">
                 <img src="hostel.jpg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">10</span>
+                </div>
               </div>
               <div class="card-body">
                 <h4 class="card-title">Budget Hostels</h4>
@@ -469,6 +502,9 @@
           <div class="col-12">
             <div class="image-container" style="height: 300px">
               <img src="snorkeling.jpg" />
+              <div class="image-reference-label" style="border-color: white">
+                <span style="color: white">11</span>
+              </div>
             </div>
           </div>
         </div>
@@ -702,33 +738,92 @@
       </section>
     </main>
 
-    <footer class="footer text-center">
-      <div class="container">
+    <footer class="footer">
+      <div class="container text-center mb-4">
         <h4 class="text-white mb-3">Taniti Tourism Board</h4>
         <p class="mb-0">© 2026 Government of Taniti. All rights reserved.</p>
-        <div class="mt-3">
-          <a href="#" class="text-muted text-decoration-none me-3"
-            >Privacy Policy</a
-          >
-          <a href="#" class="text-muted text-decoration-none me-3"
-            >Terms of Service</a
-          >
-          <a href="#" class="text-muted text-decoration-none"
-            >Travel Advisories</a
-          >
-        </div>
       </div>
+      <div
+        id="dynamic-citations"
+        class="text-start text-white-50 small mb-4 pl-2 pb-3"
+        style="display: none; word-wrap: break-word"
+      ></div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+      const pageCitations = {
+        home: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">1</span> 
+                    <div>Honl’s Beach with Palm Trees on the shoreline. (n.d.). Big Island Guide. Retrieved from <a href="https://bigislandguide.com/honls-beach" class="text-info" target="_blank">https://bigislandguide.com/honls-beach</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">2</span> 
+                    <div>Volcano surrounded by lush forest. (n.d.). LiveScience. Retrieved from <a href="https://www.livescience.com/planet-earth/volcanos/the-closer-a-volcano-is-to-erupting-the-greener-the-trees-around-it-look-from-space" class="text-info" target="_blank">https://www.livescience.com/planet-earth/volcanos/the-closer-a-volcano-is-to-erupting-the-greener-the-trees-around-it-look-from-space</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">3</span> 
+                    <div>Indigenous children of a tropical region. (n.d.). The United Nations Correspondent. Retrieved from <a href="https://theunitednationscorrespondent.com/un-indigenous-and-tribal-peoples-are-best-guardians-of-latin-america-and-the-caribbeans-forests/" class="text-info" target="_blank">https://theunitednationscorrespondent.com/un-indigenous-and-tribal-peoples-are-best-guardians-of-latin-america-and-the-caribbeans-forests/</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">4</span> 
+                    <div>Tropical bay with resorts. (n.d.). Riu Palace Tropical Bay. Retrieved from <a href="https://www.riupalacetropicalbay.com/" class="text-info" target="_blank">https://www.riupalacetropicalbay.com/</a>.</div>
+                </div>
+            `,
+        food: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">5</span> 
+                    <div>Arrangement of raw seafood. (n.d.). Adelphia Seafood. Retrieved from <a href="https://www.adelphiaseafood.com/our-products/" class="text-info" target="_blank">https://www.adelphiaseafood.com/our-products/</a>.</div>
+                </div>
+            `,
+        amenities: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">6</span> 
+                    <div>From left to right: dollar sign ($), euro sign (€), yen sign (¥), and pound sign (£). (n.d.). Wikipedia. Retrieved from <a href="https://en.wikipedia.org/wiki/Currency_symbol" class="text-info" target="_blank">https://en.wikipedia.org/wiki/Currency_symbol</a>.</div>
+                </div>
+            `,
+        lodging: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">7</span> 
+                    <div>Singer Island resort lagoon pool. (n.d.). Marriott. Retrieved from <a href="https://www.marriott.com/en-us/hotels/pbisg-palm-beach-marriott-singer-island-beach-resort-and-spa/experiences/" class="text-info" target="_blank">https://www.marriott.com/en-us/hotels/pbisg-palm-beach-marriott-singer-island-beach-resort-and-spa/experiences/</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">8</span> 
+                    <div>Hotel room with a seaside view. (n.d.). Hotel Del Coronado. Retrieved from <a href="https://www.hoteldel.com/stay/views-neighborhood/" class="text-info" target="_blank">https://www.hoteldel.com/stay/views-neighborhood/</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">9</span> 
+                    <div>Tropical outdoor patio with a hammock. (n.d.-b). Big Island Guide. Retrieved from <a href="https://bigislandguide.com/accommodations/bed-and-breakfasts" class="text-info" target="_blank">https://bigislandguide.com/accommodations/bed-and-breakfasts</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">10</span> 
+                    <div>Room with wood furniture and bunk beds. (n.d.). Webrezpro. Retrieved from <a href="https://webrezpro.com/cloud-pms-hostels/" class="text-info" target="_blank">https://webrezpro.com/cloud-pms-hostels/</a>.</div>
+                </div>
+            `,
+        entertainment: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">11</span> 
+                    <div>Two people snorkeling near a school of fish. (n.d.). Get Your Guide. Retrieved from <a href="https://www.getyourguide.com/puerto-morelos-l112372/puerto-morelos-snorkel-trip-with-lunch-t304598/" class="text-info" target="_blank">https://www.getyourguide.com/puerto-morelos-l112372/puerto-morelos-snorkel-trip-with-lunch-t304598/</a>.</div>
+                </div>
+            `,
+      };
       document.addEventListener("DOMContentLoaded", () => {
         const navLinks = document.querySelectorAll(
           ".nav-link, .nav-btn, .navbar-brand",
         );
         const sections = document.querySelectorAll(".page-section");
         const navbarCollapse = document.getElementById("navbarNav");
+        const citationContainer = document.getElementById("dynamic-citations");
+
+        citationContainer.innerHTML = pageCitations["home"];
+        citationContainer.style.display = "block";
 
         navLinks.forEach((link) => {
           link.addEventListener("click", (e) => {
@@ -740,7 +835,6 @@
             document
               .querySelectorAll(".nav-link")
               .forEach((n) => n.classList.remove("active"));
-
             if (link.classList.contains("nav-link")) {
               link.classList.add("active");
             } else {
@@ -751,19 +845,21 @@
                 correspondingNavLink.classList.add("active");
             }
 
-            sections.forEach((sec) => {
-              sec.classList.remove("active-section");
-            });
+            sections.forEach((sec) => sec.classList.remove("active-section"));
             const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-              targetSection.classList.add("active-section");
+            if (targetSection) targetSection.classList.add("active-section");
+
+            if (pageCitations[targetId]) {
+              citationContainer.innerHTML = pageCitations[targetId];
+              citationContainer.style.display = "block";
+            } else {
+              citationContainer.style.display = "none";
             }
 
             if (navbarCollapse.classList.contains("show")) {
               let bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
               if (bsCollapse) bsCollapse.hide();
             }
-
             window.scrollTo({ top: 0, behavior: "smooth" });
           });
         });
