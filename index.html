@@ -318,44 +318,66 @@
       <section id="amenities" class="page-section">
         <h1 class="fw-bold mb-4">Island Amenities</h1>
         <div class="row g-4">
-          <div class="col-md-6">
-            <div class="content-card h-100">
-              <h3 class="text-primary mb-3">Groceries & Daily Needs</h3>
-              <p>
-                Whether you're cooking at your rental or need a midnight snack,
-                Taniti has you covered.
-              </p>
-              <ul>
-                <li>
-                  <strong>Supermarkets:</strong> 2 large stores for all major
-                  grocery needs.
-                </li>
-                <li>
-                  <strong>Local Grocers:</strong> 2 smaller grocery stores with
-                  fresh daily provisions.
-                </li>
-                <li>
-                  <strong>Convenience:</strong> 1 convenience store open 24
-                  hours a day, 7 days a week.
-                </li>
-              </ul>
+          <div style="display: flex; justify-content: space-between">
+            <div class="col-md-6" style="width: 35%">
+              <div class="content-card h-100">
+                <h3 class="text-primary mb-3">Groceries & Daily Needs</h3>
+                <p>
+                  Whether you're cooking at your rental or need a midnight
+                  snack, Taniti has you covered.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Supermarkets:</strong> 2 large stores for all major
+                    grocery needs.
+                  </li>
+                  <li>
+                    <strong>Local Grocers:</strong> 2 smaller grocery stores
+                    with fresh daily provisions.
+                  </li>
+                  <li>
+                    <strong>Convenience:</strong> 1 convenience store open 24
+                    hours a day, 7 days a week.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="content-card h-100">
-              <h3 class="text-primary mb-3">Healthcare Services</h3>
-              <p>Your safety and health are important to us.</p>
-              <ul>
-                <li>
-                  <strong>Hospital:</strong> One central hospital equipped with
-                  modern facilities. The hospital employs many multilingual
-                  staff members to assist tourists.
-                </li>
-                <li>
-                  <strong>Clinics:</strong> Several clinics located across the
-                  island for minor issues and check-ups.
-                </li>
-              </ul>
+            <div class="col-md-6" style="width: 35%">
+              <div class="content-card h-100">
+                <h3 class="text-primary mb-3">Healthcare Services</h3>
+                <p>Your safety and health are important to us.</p>
+                <ul>
+                  <li>
+                    <strong>Hospital:</strong> One central hospital equipped
+                    with modern facilities. The hospital employs many
+                    multilingual staff members to assist tourists.
+                  </li>
+                  <li>
+                    <strong>Clinics:</strong> Several clinics located across the
+                    island for minor issues and check-ups.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              "
+            >
+              <div class="image-container" style="width: 250px; height: 175px">
+                <img src="grocery.png" style="width: 250px; height: 175px" />
+                <div class="image-reference-label" style="border-color: white">
+                  <span style="color: white">6</span>
+                </div>
+              </div>
+              <div class="image-container" style="width: 250px; height: 175px">
+                <img src="doctor.jpg" style="width: 250px; height: 175px" />
+                <div class="image-reference-label" style="border-color: white">
+                  <span style="color: white">7</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-12">
@@ -385,7 +407,7 @@
                       class="image-reference-label"
                       style="border-color: black"
                     >
-                      <span style="color: black">6</span>
+                      <span style="color: black">8</span>
                     </div>
                   </div>
                 </div>
@@ -400,20 +422,53 @@
 
         <div class="content-card mb-4">
           <h3 class="mb-3">Getting to Taniti</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>By Air</h5>
-              <p>
-                Almost all visitors arrive by air. Our small, modern airport
-                accommodates small jets and propeller planes. We are currently
-                expanding the airport to allow larger jets to land within the
-                next few years!
-              </p>
-              <button class="btn btn-primary btn-sm me-2 nav-btn">
-                View Flights
-              </button>
+          <!-- <div class="row"> -->
+          <div style="display: flex; justify-content: space-between">
+            <div style="display: flex">
+              <div class="col-md-6">
+                <h5>By Air</h5>
+                <p>
+                  Almost all visitors arrive by air. Our small, modern airport
+                  accommodates small jets and propeller planes. We are currently
+                  expanding the airport to allow larger jets to land within the
+                  next few years!
+                </p>
+                <button class="btn btn-primary btn-sm me-2 nav-btn">
+                  View Flights
+                </button>
+              </div>
+              <div
+                class="image-container"
+                style="height: 200px; margin-left: 48px"
+              >
+                <img src="airplane.jpeg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">9</span>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
+            <div style="display: flex">
+              <div class="col-md-6">
+                <h5>By Sea</h5>
+                <p>
+                  A small cruise ship docks in beautiful Yellow Leaf Bay for one
+                  night per week, offering a scenic maritime arrival.
+                </p>
+                <button class="btn btn-primary btn-sm me-2 nav-btn">
+                  Book a Cruise
+                </button>
+              </div>
+              <div
+                class="image-container"
+                style="height: 200px; margin-left: 48px"
+              >
+                <img src="cruise.jpeg" />
+                <div class="image-reference-label" style="border-color: black">
+                  <span style="color: black">10</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-6">
               <h5>By Sea</h5>
               <p>
                 A small cruise ship docks in beautiful Yellow Leaf Bay for one
@@ -422,7 +477,7 @@
               <button class="btn btn-primary btn-sm me-2 nav-btn">
                 Book a Cruise
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -480,7 +535,7 @@
               <div class="image-container card-image-container">
                 <img src="resort.jpg" />
                 <div class="image-reference-label" style="border-color: white">
-                  <span style="color: white">7</span>
+                  <span style="color: white">11</span>
                 </div>
               </div>
               <div class="card-body">
@@ -501,7 +556,7 @@
               <div class="image-container card-image-container">
                 <img src="hotel.jpg" />
                 <div class="image-reference-label" style="border-color: black">
-                  <span style="color: black">8</span>
+                  <span style="color: black">12</span>
                 </div>
               </div>
               <div class="card-body">
@@ -521,7 +576,7 @@
               <div class="image-container card-image-container">
                 <img src="bandb.jpg" />
                 <div class="image-reference-label" style="border-color: black">
-                  <span style="color: black">9</span>
+                  <span style="color: black">13</span>
                 </div>
               </div>
               <div class="card-body">
@@ -541,7 +596,7 @@
               <div class="image-container card-image-container">
                 <img src="hostel.jpg" />
                 <div class="image-reference-label" style="border-color: black">
-                  <span style="color: black">10</span>
+                  <span style="color: black">14</span>
                 </div>
               </div>
               <div class="card-body">
@@ -626,7 +681,7 @@
             <div class="image-container" style="height: 300px">
               <img src="snorkeling.jpg" />
               <div class="image-reference-label" style="border-color: white">
-                <span style="color: white">11</span>
+                <span style="color: white">15</span>
               </div>
             </div>
           </div>
@@ -907,32 +962,51 @@
                 <strong class="text-white mb-3 d-block">Image Citations:</strong>
                 <div class="d-flex mb-2">
                     <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">6</span> 
+                    <div>Grocery store space shelves. (n.d.). Link Retail.  Retrieved from <a href="https://linkretail.com/optimizing-aisles-the-data-driven-approach-to-grocery-space-management/" class="text-info" target="_blank">https://linkretail.com/optimizing-aisles-the-data-driven-approach-to-grocery-space-management/</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">7</span> 
+                    <div>Doctor taking a patient’s blood pressure. (n.d.). Barton Associates. Retrieved from <a href="https://www.bartonassociates.com/blog/is-it-ok-to-see-a-pa-c-instead-of-a-doctor/" class="text-info" target="_blank">https://www.bartonassociates.com/blog/is-it-ok-to-see-a-pa-c-instead-of-a-doctor/</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">8</span> 
                     <div>From left to right: dollar sign ($), euro sign (€), yen sign (¥), and pound sign (£). (n.d.). Wikipedia. Retrieved from <a href="https://en.wikipedia.org/wiki/Currency_symbol" class="text-info" target="_blank">https://en.wikipedia.org/wiki/Currency_symbol</a>.</div>
+                </div>
+            `,
+        transportation: `
+                <strong class="text-white mb-3 d-block">Image Citations:</strong>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">9</span> 
+                    <div>Airplane Flying in the Sky. (n.d.). Easy-Peasy.AI. Retrieved from <a href="https://easy-peasy.ai/ai-image-generator/images/airplane-soaring-high-in-sky" class="text-info" target="_blank">https://easy-peasy.ai/ai-image-generator/images/airplane-soaring-high-in-sky</a>.</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">10</span> 
+                    <div>Cruise ship on the sea. (n.d.). USA Today. Retrieved from <a href="https://www.usatoday.com/story/travel/cruises/2018/12/18/cruise-ship-line-2018-year-review-destinations-itineraries/2286958002/" class="text-info" target="_blank">https://www.usatoday.com/story/travel/cruises/2018/12/18/cruise-ship-line-2018-year-review-destinations-itineraries/2286958002/</a>.</div>
                 </div>
             `,
         lodging: `
                 <strong class="text-white mb-3 d-block">Image Citations:</strong>
                 <div class="d-flex mb-2">
-                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">7</span> 
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">11</span> 
                     <div>Singer Island resort lagoon pool. (n.d.). Marriott. Retrieved from <a href="https://www.marriott.com/en-us/hotels/pbisg-palm-beach-marriott-singer-island-beach-resort-and-spa/experiences/" class="text-info" target="_blank">https://www.marriott.com/en-us/hotels/pbisg-palm-beach-marriott-singer-island-beach-resort-and-spa/experiences/</a>.</div>
                 </div>
                 <div class="d-flex mb-2">
-                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">8</span> 
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">12</span> 
                     <div>Hotel room with a seaside view. (n.d.). Hotel Del Coronado. Retrieved from <a href="https://www.hoteldel.com/stay/views-neighborhood/" class="text-info" target="_blank">https://www.hoteldel.com/stay/views-neighborhood/</a>.</div>
                 </div>
                 <div class="d-flex mb-2">
-                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">9</span> 
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">13</span> 
                     <div>Tropical outdoor patio with a hammock. (n.d.-b). Big Island Guide. Retrieved from <a href="https://bigislandguide.com/accommodations/bed-and-breakfasts" class="text-info" target="_blank">https://bigislandguide.com/accommodations/bed-and-breakfasts</a>.</div>
                 </div>
                 <div class="d-flex mb-2">
-                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">10</span> 
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">14</span> 
                     <div>Room with wood furniture and bunk beds. (n.d.). Webrezpro. Retrieved from <a href="https://webrezpro.com/cloud-pms-hostels/" class="text-info" target="_blank">https://webrezpro.com/cloud-pms-hostels/</a>.</div>
                 </div>
             `,
         entertainment: `
                 <strong class="text-white mb-3 d-block">Image Citations:</strong>
                 <div class="d-flex mb-2">
-                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">11</span> 
+                    <span class="flex-shrink-0 d-inline-block text-center rounded-circle border border-2 border-white text-white fw-bold me-2" style="width: 24px; height: 24px; line-height: 20px; font-size: 12px;">15</span> 
                     <div>Two people snorkeling near a school of fish. (n.d.). Get Your Guide. Retrieved from <a href="https://www.getyourguide.com/puerto-morelos-l112372/puerto-morelos-snorkel-trip-with-lunch-t304598/" class="text-info" target="_blank">https://www.getyourguide.com/puerto-morelos-l112372/puerto-morelos-snorkel-trip-with-lunch-t304598/</a>.</div>
                 </div>
             `,
